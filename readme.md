@@ -2,9 +2,9 @@
 
 The Game 'Dungeon&Fighter' guild website in node.js. (front 95%)
 
-## 화면 디자인
-
 ## Screenshots
+![desktop_1](https://user-images.githubusercontent.com/42988225/91737761-78378300-ebea-11ea-9934-0a04bb30e3d0.JPG)
+![desktop_2](https://user-images.githubusercontent.com/42988225/91737765-7a014680-ebea-11ea-8404-f4733b12be28.JPG)
 
 ## Tools
 

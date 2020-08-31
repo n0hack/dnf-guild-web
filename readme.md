@@ -4,10 +4,8 @@ The Game 'Dungeon&Fighter' guild website in node.js. (front 95%) + Resonsive
 
 ## Screenshots
 
-<p style="float: left;">
-    <img src="./desktop_1.JPG" width="425">
-    <img src="./desktop_2.JPG" width="425">
-</p>
+<img src="./desktop_1.JPG">
+<img src="./desktop_2.JPG">
 
 ## Tools
 

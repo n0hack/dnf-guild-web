@@ -12,8 +12,8 @@
 그리드에 대한 이해도 부족하고, 최대한 많은 상용 사이트를 돌아다니면서 참고했습니다 :(
 
 ### PC (Windows Chrome 1920px)
-<img src="deskto_1.jpg" width="80%"></img><br>
-<img src="deskto_2.jpg" width="80%"></img>
+<img src="desktop_1.jpg" width="80%"></img><br>
+<img src="desktop_2.jpg" width="80%"></img>
 
 ### Tablet (iPad Safari)
 
@@ -21,5 +21,5 @@
 
 ## 사용된 도구
 
-* [VSCode](http://www.dropwizard.io/1.0.2/docs/) - 개발환경
-* [Express](https://maven.apache.org/) - 웹 프레임워크
+* [VSCode](https://code.visualstudio.com/) - 개발환경
+* [Express](https://expressjs.com/) - 웹 프레임워크

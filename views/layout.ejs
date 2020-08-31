@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+
+    <meta property="og:title" content="던전앤파이터 아스테라 길드">
+    <meta property="og:description" content="We Light-up the world ★">
+    <meta property="og:image" content="images/og_image.jpg">
+
+    <meta name="viewport" content="width=device-width; initial-scale=1">
+
+    <title>던전앤파이터 아스테라 길드</title>
+
+    <!-- Stylesheet -->
+    <link rel="shortcut icon" href="ico/astera.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font-face.css">
+    <link rel="stylesheet" href="css/desktop.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/colorbox.css">
+
+    <!-- Javascript -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.colorbox-min.js"></script>
+
+    <% if(data == 'index'){ %>
+        <script src="js/astera.js"></script>
+    <% } else { } %>
+
+    <script>
+        $(document).ready(() => {
+            $(document).on("contextmenu dragstart selectstart", function (e) {
+                return false;
+            });
+
+            $('.content_second .snapshot a[rel="lightbox"]').colorbox({
+                transition: 'elastic',
+                maxWidth: '80%'
+            });
+
+            if (document.body.clientWidth >= 768) {
+                $('.astera_video a').colorbox({
+                    width: 600,
+                    height: 370,
+                    iframe: true
+                });
+            }
+
+            // open side menu (mobile ver.)
+            // open sub menu (mobile ver.)
+            $('.list_gnb > li').click(function(e){
+                if ( $(this).attr('class') == 'on' ) {
+                    $(this).attr('class', 'off');
+                    $(this).find('.list_sub').removeClass('sub_on');
+                    $(this).find('.ico_arrow').removeClass('ico_arrow_up');
+                    $(this).find('.ico_arrow').addClass('ico_arrow_down');
+                }
+                else {
+                    $('.list_gnb > li').removeClass('on');
+                    $('.list_sub').removeClass('sub_on');
+                    $(this).attr('class', 'on');
+                    $(this).find('.list_sub').addClass('sub_on');
+                    $(this).find('.ico_arrow').removeClass('ico_arrow_down');
+                    $(this).find('.ico_arrow').addClass('ico_arrow_up');
+                }
+            });
+        });
+
+        // 메인 메뉴 열기
+        var main_on = false;
+        function mainMenuSelect() {
+            if (!main_on) {
+                $('.main_menu').css('display', 'block');
+                main_on = true;
+            } else {
+                $('.main_menu').css('display', 'none');
+                main_on = false;
+            }
+        }
+
+        // 외부 링크 메뉴 열기
+        var ex_on = false;
+        function sideMenuSelect(){
+            if (!ex_on) {
+                $('.ex_menu').css('display', 'block');
+                ex_on = true;
+            } else {
+                $('.ex_menu').css('display', 'none');
+                ex_on = false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="asteraWrap">
+        <header id="asteraHead">
+            <div class="a_head">
+                <button type="button" class="btn_mainmenu" onclick="mainMenuSelect();">
+                </button>
+                <button type="button" class="btn_exmenu" onclick="sideMenuSelect();">
+                </button>
+                <!-- 모바일 버전 메인 메뉴 -->
+                <div class="main_menu">
+                    <div class="inner_menu">
+                        <h1 class="tit_sidemenu">
+                            <a href="#" class="link_tit">아스테라</a>
+                        </h1>
+                        <div class="box_menu">
+                            <nav id="asteraGnb">
+                                <ul class="list_gnb">
+                                    <li>
+                                        <a href="#" class="link_gnb">
+                                            OUR STORY
+                                            <span class="ico_arrow ico_arrow_down"></span>
+                                        </a>
+                                        <ul class="list_sub">
+                                            <li><a href="/story/astera/" class="link_sub">길드소개</a></li>
+                                            <li><a href="/story/rule/" class="link_sub">길드규칙</a></li>
+                                            <li><a href="/story/career/" class="link_sub">가입방법</a></li>
+                                        </ul> 
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link_gnb">
+                                            CONTENT
+                                            <span class="ico_arrow ico_arrow_down"></span>
+                                        </a>
+                                        <ul class="list_sub">
+                                            <li><a href="/content/chat" class="link_sub">오픈채팅</a></li>
+                                            <li><a href="/content/raid" class="link_sub">길드공대</a></li>
+                                            <li><a href="/content/guide" class="link_sub">뉴비 가이드</a></li>
+                                            <li><a href="/content/lol" class="link_sub">롤 자유랭크</a></li>
+                                        </ul> 
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link_gnb">
+                                            DOWNLOAD
+                                            <span class="ico_arrow ico_arrow_down"></span>
+                                        </a>
+                                        <ul class="list_sub">
+                                            <li><a href="/download/game" class="link_sub">미니게임</a></li>
+                                            <li><a href="/download/util" class="link_sub">유틸리티</a></li>
+                                        </ul> 
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link_gnb">
+                                            CS
+                                            <span class="ico_arrow ico_arrow_down"></span>
+                                        </a>
+                                        <ul class="list_sub">
+                                            <li><a href="/cs/question" class="link_sub">길드문의</a></li>
+                                            <li><a href="/cs/report" class="link_sub">비매너 신고</a></li>
+                                        </ul> 
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link_gnb">
+                                            MANAGE
+                                            <span class="ico_arrow ico_arrow_down"></span>
+                                        </a>
+                                        <ul class="list_sub">
+                                            <li><a href="/manage/log" class="link_sub">경고로그</a></li>
+                                            <li><a href="/manage/sponsor" class="link_sub">후원하기</a></li>
+                                        </ul> 
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="astera_info">
+                                <small class="txt_slogan">We Light-Up The World.</small>
+                                <small class="txt_copyright">Copyright ⓒ Astera Guild. All rights reserved.</small>
+                            </div>
+                        </div>
+                        <button type="button" class="btn_close" onclick="mainMenuSelect();"></button>
+                    </div>
+                </div>
+                <!-- 모바일 버전 외부 링크 메뉴 -->
+                <div class="ex_menu">
+                    <div class="inner_menu">
+                        <h1 class="tit_sidemenu">
+                            <a href="#" class="link_tit">아스테라</a>
+                        </h1>
+                        <div class="box_menu">
+                            <nav id="sideEx">
+                                <ul class="list_ex">
+                                    <li>
+                                        <a href="#" class="link_ex">
+                                            <img src="images/ex_facebook.png"></img>
+                                            페이스북 (Facebook)
+                                            <span class="ico_arrow ico_arrow_move"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link_ex">
+                                            <img src="images/ex_youtube.png"></img>
+                                            유튜브 (Youtube)
+                                            <span class="ico_arrow ico_arrow_move"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link_ex">
+                                            <img src="images/ex_insta.png"></img>
+                                            인스타그램 (Instagram)
+                                            <span class="ico_arrow ico_arrow_move"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="astera_info">
+                                <small class="txt_slogan">We Light-Up The World.</small>
+                                <small class="txt_copyright">Copyright ⓒ Astera Guild. All rights reserved.</small>
+                            </div>
+                        </div>
+                        <button type="button" class="btn_close" onclick="sideMenuSelect();"></button>
+                    </div>
+                </div>
+                <!-- PC 버전 메인 메뉴 -->
+                <nav class="main_gnb">
+                    <div class="main_gnb_wrapper">
+                        <a href="#" class="main_gnb_link">메뉴</a>
+                        <nav class="main_gnb_sub">
+                            <div class="inner_nav">
+                                <div class="nav_box">
+                                    <p>OUR STORY</p>
+                                    <ul>
+                                        <li><a href="/story/astera/" class="nav_link">길드소개</a></li>
+                                        <li><a href="/story/rule/" class="nav_link">길드규칙</a></li>
+                                        <li><a href="/story/career/" class="nav_link">가입방법</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav_box">
+                                    <p>CONTENT</p>
+                                    <ul>
+                                        <li><a href="/content/chat" class="nav_link">오픈채팅</a></li>
+                                        <li><a href="/content/raid" class="nav_link">길드공대</a></li>
+                                        <li><a href="/content/guide" class="nav_link">뉴비 가이드</a></li>
+                                        <li><a href="/content/lol" class="nav_link">롤 자유랭크</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav_box">
+                                    <p>DOWNLOAD</p>
+                                    <ul>
+                                        <li><a href="/download/game" class="nav_link">미니게임</a></li>
+                                        <li><a href="/download/util" class="nav_link">유틸리티</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav_box">
+                                    <p>CS</p>
+                                    <ul>
+                                        <li><a href="/cs/question" class="nav_link">길드문의</a></li>
+                                        <li><a href="/cs/report" class="nav_link">비매너 신고</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav_box">
+                                    <p>MANAGE</p>
+                                    <ul>
+                                        <li><a href="/manage/log" class="nav_link">경고로그</a></li>
+                                        <li><a href="/manage/sponsor" class="nav_link">후원하기</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </nav>
+                <!-- 타이틀 로고 -->
+                <h1 class="tit_logo">
+                    <a href="/" id="asteraLogo" class="link_logo">아스테라</a>
+                </h1>
+                <!-- PC 버전 외부 링크 메뉴 -->
+                <nav class="ex_gnb">
+                    <ul class="ex_gnb_wrapper">
+                        <li><a href="#" class="ex_gnb_link"><img src="images/gnb_facebook.png"></a></li>
+                        <li><a href="#" class="ex_gnb_link"><img src="images/gnb_youtube.png"></a></li>
+                        <li><a href="#" class="ex_gnb_link"><img src="images/gnb_insta.png"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="asteraTopSection">
+            <% if(data == 'index'){ %>
+                <%- include("part/index_top.ejs") %>
+            <% } else if(data == 'astera'){ %>
+                <%- include("part/intro_top.ejs") %>
+            <% } else if(data == 'rule'){ %>
+                <%- include("part/rule_top.ejs") %>
+            <% } else if(data == 'career'){ %>
+                <%- include("part/career_top.ejs") %>
+            <% } %>
+        </section>
+        <section id="asteraMainSection">
+            <div class="a_section">
+                <% if(data == 'index'){ %>
+                    <%- include("part/index_main.ejs") %>
+                <% } else if(data == 'astera'){ %>
+                    <%- include("part/intro_main.ejs") %>
+                <% } else if(data == 'rule'){ %>
+                    <%- include("part/rule_main.ejs") %>
+                <% } else if(data == 'career'){ %>
+                    <%- include("part/career_main.ejs") %>
+                <% } %>
+            </div>
+        </section>
+        <footer id="asteraFooter">
+            <p>인게임 & 길드 외 모든 문의사항은 mail@nohack.io로 주세요.</p>
+            <p>Copyright ⓒ Astera Guild. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

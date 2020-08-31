@@ -1,0 +1,27 @@
+@font-face {
+    font-family: CookieRunBlack;
+    src: url('fonts/CookieRun\ Black.otf') format('opentype'),
+        url('fonts/CookieRun\ Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: CookieRunRegular;
+    src: url('fonts/CookieRun Regular.otf') format('opentype'),
+        url('fonts/CookieRun Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: CookieRunBold;
+    src: url('fonts/CookieRun Bold.otf') format('opentype'),
+        url('fonts/CookieRun Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: KakaoLight;
+    src: url('fonts/KakaoLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: KakaoRegular;
+    src: url('fonts/KakaoRegular.ttf') format('truetype');
+}

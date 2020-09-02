@@ -269,7 +269,6 @@
     #asteraTopSection .main_bg_text img {
         max-width: 100%;
         max-height: 100%;
-        filter: drop-shadow(3px 3px 3px #000);
     }
 
     #asteraTopSection video {
@@ -608,7 +607,7 @@
         text-align: left;
         font-family: KakaoRegular;
         line-height: 28px;
-        font-size: .9em;
+        font-size: 1em;
     }
 
     .a_section .rules strong {
@@ -617,16 +616,6 @@
         margin: 12px 0;
         display: block;
         font-size: 1.4em;
-    }
-
-    .a_section .rules span {
-        display: block;
-        text-align: center;
-        font-family: KakaoRegular;
-        line-height: 28px;
-        font-size: 1.1em;
-        margin: 0;
-        padding: 0;
     }
 
     /* 가입 방법 */
@@ -724,6 +713,227 @@
         font-size: 1.4em;
         box-sizing: border-box;
         background: #000;
+    }
+
+    /* 모바일 앱 */
+    .a_section .content_app {
+        padding: 0 24px;
+        text-align: left;
+    }
+
+    .a_section .content_app .app_header {
+        font-family: KakaoRegular;
+        color: #ff0141;
+        font-size: 1.1em;
+        font-weight: bold;
+        padding-bottom: 20px;
+    }
+    
+    .a_section .content_app .app_comment  {
+        font-family: KakaoRegular;
+        font-size: 1.1em;
+        padding-bottom: 20px;
+    }
+
+    .a_section .content_app .app_banner {
+        display: inline-block;
+        margin-top: 80px;
+        box-sizing: border-box;
+        background: #ff0141;
+        border-radius: 0 25px 0 0;
+    }
+
+    .a_section .app_banner p {
+        margin: 15px 20px;
+        font-family: KakaoRegular;
+        color: white;
+        font-weight: bold;
+    }
+    
+
+    .a_section .app_list {
+        padding: 40px 0 120px;
+    }
+
+    .a_section .app_box {
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    .a_section .app_box .app_thumb {
+        width: 100%;
+    }
+
+    .a_section .app_box .app_thumb img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .a_section .app_box .app_title {
+        padding: 20px 0 10px;
+        font-family: KakaoRegular;
+        font-size: 1.6em;
+        font-weight: bold;
+    }
+
+    .a_section .app_box .app_desc {
+        font-family: KakaoRegular;
+        font-size: 1.1em;
+    }
+
+    /* 문의사항 */
+    .a_section .content_support {
+        padding: 0 24px;
+    }
+
+    .a_section .content_support img {
+        margin-bottom: 18px;
+    }
+
+    .a_section .content_support .support_header {
+        font-family: KakaoRegular;
+        color: #ff0141;
+        font-size: 1.8em;
+        padding-bottom: 20px;
+    }
+    
+    .a_section .content_support .support_comment  {
+        font-family: KakaoRegular;
+        font-size: 1.2em;
+        padding-bottom: 20px;
+    }
+
+    .a_section .content_support hr {
+        display: none;
+    }
+
+    .a_section .content_support > a {
+        display: inline-block;
+        margin: 20px 20px 0;
+        padding: 18px 54px;
+        color: #fff;
+        font-family: KakaoRegular;
+        line-height: 28px;
+        font-size: 1.4em;
+        box-sizing: border-box;
+        background: #000;
+    }
+
+    .a_section .content_support .rules {
+        display: none;
+    }
+
+    /* 후원하기 */
+    .a_section .content_sponsor {
+        padding: 0 24px;
+    }
+
+    .a_section .content_sponsor > img {
+        margin-bottom: 18px;
+    }
+
+    .a_section .content_sponsor .header {
+        font-family: KakaoRegular;
+        color: #ff0141;
+        font-size: 1.8em;
+        padding-bottom: 20px;
+    }
+    
+    .a_section .content_sponsor .comment  {
+        font-family: KakaoRegular;
+        font-size: 1.2em;
+        padding-bottom: 20px;
+    }
+
+    .a_section .content_sponsor hr {
+        margin: 20px auto;
+    }
+
+    .a_section .sponsor_list {
+        padding: 0 0 20px;
+    }
+
+    .a_section .sponsor_box {
+        display: inline-block;
+        width: 300px;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .a_section .sponsor_box .sponsor_thumb {
+        width: 300px;
+    }
+
+    .a_section .sponsor_box .sponsor_thumb img {
+        width: 300px;
+        object-fit: cover;
+    }
+
+    .a_section .sponsor_box .sponsor_title {
+        padding: 20px 0 10px;
+        font-family: KakaoRegular;
+        font-size: 1.6em;
+        font-weight: bold;
+    }
+
+    .a_section .sponsor_box .sponsor_desc {
+        font-family: KakaoRegular;
+        font-size: 1.0em;
+    }
+
+    /* 오픈채팅 */
+    .a_section .content_chat {
+        padding: 0 24px;
+        text-align: left;
+    }
+
+    .a_section .content_chat > img {
+        width: 100%;
+    }
+
+    .a_section .content_chat .rules {
+        padding: 40px 0 0 0px;
+    }
+
+    .a_section .content_chat .rules img {
+        width: 80px;
+    }
+
+    .a_section .content_chat .rules p {
+        font-family: KakaoRegular;
+        text-align: left;
+        line-height: 28px;
+        font-size: 1em;
+    }
+
+    .a_section .content_chat .rules strong {
+        font-family: KakaoRegular;
+        margin-bottom: 18px;
+        display: block;
+        font-size: 1.4em;
+    }
+
+    .a_section .go_chat {
+        margin: 80px 0 40px;
+        display: block;
+        text-align: center;
+    }
+
+    .a_section .go_chat > a {
+        padding: 18px 54px;
+        color: #fff;
+        font-family: KakaoRegular;
+        line-height: 28px;
+        font-size: 1.4em;
+        box-sizing: border-box;
+        background: #000;
+    }
+
+    .chat_banner {
+        display: block;
+        margin: 40px auto 0px;
+        width: 80%;
     }
 
     #asteraFooter {

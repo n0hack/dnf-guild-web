@@ -61,6 +61,8 @@
                 else {
                     $('.list_gnb > li').removeClass('on');
                     $('.list_sub').removeClass('sub_on');
+                    $('.ico_arrow').removeClass('ico_arrow_up');
+                    $('.ico_arrow').addClass('ico_arrow_down');
                     $(this).attr('class', 'on');
                     $(this).find('.list_sub').addClass('sub_on');
                     $(this).find('.ico_arrow').removeClass('ico_arrow_down');
@@ -129,20 +131,17 @@
                                             <span class="ico_arrow ico_arrow_down"></span>
                                         </a>
                                         <ul class="list_sub">
-                                            <li><a href="/content/chat" class="link_sub">오픈채팅</a></li>
-                                            <li><a href="/content/raid" class="link_sub">길드공대</a></li>
-                                            <li><a href="/content/guide" class="link_sub">뉴비 가이드</a></li>
-                                            <li><a href="/content/lol" class="link_sub">롤 자유랭크</a></li>
+                                            <li><a href="/content/chat/" class="link_sub">오픈채팅</a></li>
+                                            <li><a href="/content/raid/" class="link_sub">길드공대</a></li>
                                         </ul> 
                                     </li>
                                     <li>
                                         <a href="#" class="link_gnb">
-                                            DOWNLOAD
+                                            PRODUCT
                                             <span class="ico_arrow ico_arrow_down"></span>
                                         </a>
                                         <ul class="list_sub">
-                                            <li><a href="/download/game" class="link_sub">미니게임</a></li>
-                                            <li><a href="/download/util" class="link_sub">유틸리티</a></li>
+                                            <li><a href="/product/app/" class="link_sub">모바일 앱</a></li>
                                         </ul> 
                                     </li>
                                     <li>
@@ -151,8 +150,7 @@
                                             <span class="ico_arrow ico_arrow_down"></span>
                                         </a>
                                         <ul class="list_sub">
-                                            <li><a href="/cs/question" class="link_sub">길드문의</a></li>
-                                            <li><a href="/cs/report" class="link_sub">비매너 신고</a></li>
+                                            <li><a href="/cs/support/" class="link_sub">문의하기</a></li>
                                         </ul> 
                                     </li>
                                     <li>
@@ -161,8 +159,7 @@
                                             <span class="ico_arrow ico_arrow_down"></span>
                                         </a>
                                         <ul class="list_sub">
-                                            <li><a href="/manage/log" class="link_sub">경고로그</a></li>
-                                            <li><a href="/manage/sponsor" class="link_sub">후원하기</a></li>
+                                            <li><a href="/manage/sponsor/" class="link_sub">후원하기</a></li>
                                         </ul> 
                                     </li>
                                 </ul>
@@ -185,21 +182,21 @@
                             <nav id="sideEx">
                                 <ul class="list_ex">
                                     <li>
-                                        <a href="#" class="link_ex">
+                                        <a href="https://www.facebook.com/%EB%8D%98%EC%A0%84%EC%95%A4%ED%8C%8C%EC%9D%B4%ED%84%B0-%EC%95%84%EC%8A%A4%ED%85%8C%EB%9D%BC-%EA%B8%B8%EB%93%9C-106279844541402" target="_blank" class="link_ex">
                                             <img src="images/ex_facebook.png"></img>
                                             페이스북 (Facebook)
                                             <span class="ico_arrow ico_arrow_move"></span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="link_ex">
+                                        <a href="https://www.youtube.com/channel/UCXNW8z3YPXJBsvU3JjqMQEQ?view_as=subscriber" target="_blank" class="link_ex">
                                             <img src="images/ex_youtube.png"></img>
                                             유튜브 (Youtube)
                                             <span class="ico_arrow ico_arrow_move"></span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="link_ex">
+                                        <a href="https://www.instagram.com/" target="_blank" class="link_ex">
                                             <img src="images/ex_insta.png"></img>
                                             인스타그램 (Instagram)
                                             <span class="ico_arrow ico_arrow_move"></span>
@@ -232,31 +229,26 @@
                                 <div class="nav_box">
                                     <p>CONTENT</p>
                                     <ul>
-                                        <li><a href="/content/chat" class="nav_link">오픈채팅</a></li>
-                                        <li><a href="/content/raid" class="nav_link">길드공대</a></li>
-                                        <li><a href="/content/guide" class="nav_link">뉴비 가이드</a></li>
-                                        <li><a href="/content/lol" class="nav_link">롤 자유랭크</a></li>
+                                        <li><a href="/content/chat/" class="nav_link">오픈채팅</a></li>
+                                        <li><a href="/content/raid/" class="nav_link">길드공대</a></li>
                                     </ul>
                                 </div>
                                 <div class="nav_box">
-                                    <p>DOWNLOAD</p>
+                                    <p>PRODUCT</p>
                                     <ul>
-                                        <li><a href="/download/game" class="nav_link">미니게임</a></li>
-                                        <li><a href="/download/util" class="nav_link">유틸리티</a></li>
+                                        <li><a href="/product/app/" class="nav_link">모바일 앱</a></li>
                                     </ul>
                                 </div>
                                 <div class="nav_box">
                                     <p>CS</p>
                                     <ul>
-                                        <li><a href="/cs/question" class="nav_link">길드문의</a></li>
-                                        <li><a href="/cs/report" class="nav_link">비매너 신고</a></li>
+                                        <li><a href="/cs/support/" class="nav_link">문의하기</a></li>
                                     </ul>
                                 </div>
                                 <div class="nav_box">
                                     <p>MANAGE</p>
                                     <ul>
-                                        <li><a href="/manage/log" class="nav_link">경고로그</a></li>
-                                        <li><a href="/manage/sponsor" class="nav_link">후원하기</a></li>
+                                        <li><a href="/manage/sponsor/" class="nav_link">후원하기</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -270,9 +262,9 @@
                 <!-- PC 버전 외부 링크 메뉴 -->
                 <nav class="ex_gnb">
                     <ul class="ex_gnb_wrapper">
-                        <li><a href="#" class="ex_gnb_link"><img src="images/gnb_facebook.png"></a></li>
-                        <li><a href="#" class="ex_gnb_link"><img src="images/gnb_youtube.png"></a></li>
-                        <li><a href="#" class="ex_gnb_link"><img src="images/gnb_insta.png"></a></li>
+                        <li><a href="https://www.facebook.com/%EB%8D%98%EC%A0%84%EC%95%A4%ED%8C%8C%EC%9D%B4%ED%84%B0-%EC%95%84%EC%8A%A4%ED%85%8C%EB%9D%BC-%EA%B8%B8%EB%93%9C-106279844541402"  target="_blank" class="ex_gnb_link"><img src="images/gnb_facebook.png"></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCXNW8z3YPXJBsvU3JjqMQEQ?view_as=subscriber" target="_blank" class="ex_gnb_link"><img src="images/gnb_youtube.png"></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank" class="ex_gnb_link"><img src="images/gnb_insta.png"></a></li>
                     </ul>
                 </nav>
             </div>
@@ -286,6 +278,16 @@
                 <%- include("part/rule_top.ejs") %>
             <% } else if(data == 'career'){ %>
                 <%- include("part/career_top.ejs") %>
+            <% } else if(data == 'chat'){ %>
+                <%- include("part/chat_top.ejs") %>
+            <% } else if(data == 'raid'){ %>
+                <%- include("part/raid_top.ejs") %>
+            <% } else if(data == 'app'){ %>
+                <%- include("part/app_top.ejs") %>
+            <% } else if(data == 'support'){ %>
+                <%- include("part/support_top.ejs") %>
+            <% }  else if(data == 'sponsor'){ %>
+                <%- include("part/sponsor_top.ejs") %>
             <% } %>
         </section>
         <section id="asteraMainSection">
@@ -298,6 +300,16 @@
                     <%- include("part/rule_main.ejs") %>
                 <% } else if(data == 'career'){ %>
                     <%- include("part/career_main.ejs") %>
+                <% } else if(data == 'chat'){ %>
+                    <%- include("part/chat_main.ejs") %>
+                <% } else if(data == 'raid'){ %>
+                    <%- include("part/raid_main.ejs") %>
+                <% } else if(data == 'app'){ %>
+                    <%- include("part/app_main.ejs") %>
+                <% } else if(data == 'support'){ %>
+                    <%- include("part/support_main.ejs") %>
+                <% }  else if(data == 'sponsor'){ %>
+                    <%- include("part/sponsor_main.ejs") %>
                 <% } %>
             </div>
         </section>

@@ -752,7 +752,7 @@
     
 
     .a_section .app_list {
-        padding: 40px 0 120px;
+        padding: 40px 0 20px;
     }
 
     .a_section .app_box {
@@ -907,6 +907,12 @@
         font-size: 1em;
     }
 
+    .a_section .rules p span {
+        font-family: KakaoRegular;
+        line-height: 28px;
+        font-size: 1em;
+    }
+
     .a_section .content_chat .rules strong {
         font-family: KakaoRegular;
         margin-bottom: 18px;
@@ -934,6 +940,115 @@
         display: block;
         margin: 40px auto 0px;
         width: 80%;
+    }
+
+    /* 길드 공대 */
+    .a_section .content_sirocco {
+        padding: 0 24px;
+        text-align: left;
+    }
+
+    .a_section .content_sirocco > img {
+        width: 100%;
+    }
+
+    .table_container {
+        width:100%;	
+	    overflow-x:auto;
+        white-space: nowrap;
+    }
+
+    .raid_player {
+        margin: 15px 0 40px 0;
+        border: 1px solid #666;
+        text-align: center;
+        box-sizing: border-box;
+        border-collapse: collapse;
+
+    }
+
+    .raid_top {
+        background: #dadada;
+        font-weight: bold;
+    }
+
+    td {
+        font-family: KakaoRegular;
+        font-size: .9em;
+        padding: 20px 40px;
+        border: 1px solid #666;
+    }
+
+    td.player {
+        width: 120px;
+    }
+
+    .raid_button {
+        margin-top: 20px;
+    }
+
+    .a_section .content_sirocco button {
+        display: inline-block;
+        padding: 10px 10px;
+        font-family: KakaoRegular;
+        font-size: .9em;
+        font-weight: bold;
+        color: #fff;
+        background: #000;
+    }
+
+
+    .a_section .content_sirocco .rules {
+        padding: 40px 0 0 0;
+    }
+
+    .a_section .content_sirocco .rules img {
+        width: 100px;
+    }
+
+    .a_section .content_sirocco .rules p {
+        font-family: KakaoRegular;
+        line-height: 28px;
+        font-size: 1.1em;
+    }
+
+    .a_section .content_sirocco .rules strong {
+        font-family: KakaoRegular;
+        margin: 24px 0;
+        display: block;
+        font-size: 1.8em;
+    }
+
+    .a_section .content_sirocco .rules .cast {
+        font-family: KakaoRegular;
+        display: block;
+        margin-top: 18px;
+        font-size: 1.4em;
+    }
+
+    .gap {
+        display: block;
+        margin: 80px 0;
+    }
+
+    .content_sirocco table:nth-child(1){
+        display: table;
+    }
+
+    .content_sirocco table:nth-child(2){
+        display: none;
+    }
+
+    .content_sirocco table:nth-child(3){
+        display: none;
+    }
+
+    .content_sirocco table:nth-child(4){
+        display: none;
+    }
+
+    .content_sirocco table:nth-child(5){
+        display: none;
     }
 
     #asteraFooter {

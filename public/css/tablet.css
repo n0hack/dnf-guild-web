@@ -596,6 +596,12 @@
         font-size: 1.1em;
     }
 
+    .a_section .rules p span {
+        font-family: KakaoRegular;
+        line-height: 28px;
+        font-size: 1.1em;
+    }
+
     .a_section .rules strong {
         font-family: KakaoRegular;
         margin-bottom: 18px;
@@ -791,7 +797,7 @@
 
     .a_section .content_support hr {
         width: 700px;
-        margin: 60px auto;
+        margin: 60px auto 0px;
     }
 
     .a_section .content_support > a {
@@ -922,6 +928,111 @@
         display: block;
         margin: 60px auto 0px;
         width: 80%;
+    }
+
+    .a_section .content_sirocco {
+        padding: 0 48px;
+        text-align: left;
+    }
+
+    .table_container {
+        width:100%;	
+	    overflow-x:auto;
+        white-space: nowrap;
+    }
+
+    .raid_player {
+        margin: 15px 0 80px 40px;
+        border: 1px solid #666;
+        text-align: center;
+        box-sizing: border-box;
+        border-collapse: collapse;
+
+    }
+
+    .raid_top {
+        background: #dadada;
+        font-weight: bold;
+    }
+
+    td {
+        font-family: KakaoRegular;
+        font-size: 1.2em;
+        padding: 20px 40px;
+        border: 1px solid #666;
+    }
+
+    td.player {
+        width: 150px;
+    }
+
+    .raid_button {
+        margin-top: 40px;
+        padding-left: 40px;
+    }
+
+    .a_section .content_sirocco button {
+        display: inline-block;
+        padding: 15px 40px;
+        font-family: KakaoRegular;
+        font-weight: bold;
+        color: #fff;
+        background: #000;
+    }
+
+    .a_section .content_sirocco .rules {
+        padding: 40px 0 20px 40px;
+        display: grid;
+        grid-template-columns: 150px 1fr;
+    }
+
+    .a_section .content_sirocco .rules img {
+        width: 100px;
+    }
+
+    .a_section .content_sirocco .rules p {
+        font-family: KakaoRegular;
+        line-height: 28px;
+        font-size: 1.1em;
+    }
+
+    .a_section .content_sirocco .rules strong {
+        font-family: KakaoRegular;
+        margin-bottom: 18px;
+        display: block;
+        font-size: 1.8em;
+    }
+
+    .a_section .content_sirocco .rules .cast {
+        font-family: KakaoRegular;
+        display: block;
+        margin-top: 18px;
+        font-size: 1.4em;
+    }
+
+    .gap {
+        display: block;
+        margin: 80px 0;
+    }
+
+    .content_sirocco table:nth-child(1){
+        display: table;
+    }
+
+    .content_sirocco table:nth-child(2){
+        display: none;
+    }
+
+    .content_sirocco table:nth-child(3){
+        display: none;
+    }
+
+    .content_sirocco table:nth-child(4){
+        display: none;
+    }
+
+    .content_sirocco table:nth-child(5){
+        display: none;
     }
 
     #asteraFooter {

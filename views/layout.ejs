@@ -69,6 +69,22 @@
                     $(this).find('.ico_arrow').addClass('ico_arrow_up');
                 }
             });
+
+            // raid button
+            $('.content_sirocco button').click(function(e) {
+                $('.content_sirocco .raid_player').css('display', 'none');
+                if($(this).attr('class') == 'raid_1'){
+                    $('.content_sirocco .raid_player:nth-child(1)').css('display', 'table');
+                } else if($(this).attr('class') == 'raid_2'){
+                    $('.content_sirocco .raid_player:nth-child(2)').css('display', 'table');
+                } else if($(this).attr('class') == 'raid_3'){
+                    $('.content_sirocco .raid_player:nth-child(3)').css('display', 'table');
+                } else if($(this).attr('class') == 'raid_4'){
+                    $('.content_sirocco .raid_player:nth-child(4)').css('display', 'table');
+                } else if($(this).attr('class') == 'raid_5'){
+                    $('.content_sirocco .raid_player:nth-child(5)').css('display', 'table');
+                }
+            });
         });
 
         // 메인 메뉴 열기
@@ -132,7 +148,7 @@
                                         </a>
                                         <ul class="list_sub">
                                             <li><a href="/content/chat/" class="link_sub">오픈채팅</a></li>
-                                            <li><a href="/content/raid/" class="link_sub">길드공대</a></li>
+                                            <li><a href="/content/sirocco/" class="link_sub">길드공대 (시로코)</a></li>
                                         </ul> 
                                     </li>
                                     <li>
@@ -230,7 +246,7 @@
                                     <p>CONTENT</p>
                                     <ul>
                                         <li><a href="/content/chat/" class="nav_link">오픈채팅</a></li>
-                                        <li><a href="/content/raid/" class="nav_link">길드공대</a></li>
+                                        <li><a href="/content/sirocco/" class="nav_link">길드공대 (시로코)</a></li>
                                     </ul>
                                 </div>
                                 <div class="nav_box">
@@ -280,8 +296,8 @@
                 <%- include("part/career_top.ejs") %>
             <% } else if(data == 'chat'){ %>
                 <%- include("part/chat_top.ejs") %>
-            <% } else if(data == 'raid'){ %>
-                <%- include("part/raid_top.ejs") %>
+            <% } else if(data == 'sirocco'){ %>
+                <%- include("part/sirocco_top.ejs") %>
             <% } else if(data == 'app'){ %>
                 <%- include("part/app_top.ejs") %>
             <% } else if(data == 'support'){ %>
@@ -302,8 +318,8 @@
                     <%- include("part/career_main.ejs") %>
                 <% } else if(data == 'chat'){ %>
                     <%- include("part/chat_main.ejs") %>
-                <% } else if(data == 'raid'){ %>
-                    <%- include("part/raid_main.ejs") %>
+                <% } else if(data == 'sirocco'){ %>
+                    <%- include("part/sirocco_main.ejs") %>
                 <% } else if(data == 'app'){ %>
                     <%- include("part/app_main.ejs") %>
                 <% } else if(data == 'support'){ %>

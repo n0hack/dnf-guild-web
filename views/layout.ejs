@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
 
+    <meta property="og:type" content="website">
     <meta property="og:title" content="던전앤파이터 아스테라 길드">
-    <meta property="og:description" content="We Light-up the world ★">
-    <meta property="og:image" content="images/og_image.jpg">
+    <meta property="og:description" content="We Light-up The World ★">
+    <meta property="og:image" content="images/og_image.JPG">
+    <meta property="og:url" content="http://astera.co.kr/">
 
     <meta name="viewport" content="width=device-width; initial-scale=1">
 
@@ -27,7 +29,7 @@
     <script src="js/jquery.colorbox-min.js"></script>
 
     <% if(data == 'index'){ %>
-        <script src="js/astera.js"></script>
+    <script src="js/astera.js"></script>
     <% } else { } %>
 
     <script>
@@ -51,14 +53,13 @@
 
             // open side menu (mobile ver.)
             // open sub menu (mobile ver.)
-            $('.list_gnb > li').click(function(e){
-                if ( $(this).attr('class') == 'on' ) {
+            $('.list_gnb > li').click(function (e) {
+                if ($(this).attr('class') == 'on') {
                     $(this).attr('class', 'off');
                     $(this).find('.list_sub').removeClass('sub_on');
                     $(this).find('.ico_arrow').removeClass('ico_arrow_up');
                     $(this).find('.ico_arrow').addClass('ico_arrow_down');
-                }
-                else {
+                } else {
                     $('.list_gnb > li').removeClass('on');
                     $('.list_sub').removeClass('sub_on');
                     $('.ico_arrow').removeClass('ico_arrow_up');
@@ -71,17 +72,17 @@
             });
 
             // raid button
-            $('.content_sirocco button').click(function(e) {
+            $('.content_sirocco button').click(function (e) {
                 $('.content_sirocco .raid_player').css('display', 'none');
-                if($(this).attr('class') == 'raid_1'){
+                if ($(this).attr('class') == 'raid_1') {
                     $('.content_sirocco .raid_player:nth-child(1)').css('display', 'table');
-                } else if($(this).attr('class') == 'raid_2'){
+                } else if ($(this).attr('class') == 'raid_2') {
                     $('.content_sirocco .raid_player:nth-child(2)').css('display', 'table');
-                } else if($(this).attr('class') == 'raid_3'){
+                } else if ($(this).attr('class') == 'raid_3') {
                     $('.content_sirocco .raid_player:nth-child(3)').css('display', 'table');
-                } else if($(this).attr('class') == 'raid_4'){
+                } else if ($(this).attr('class') == 'raid_4') {
                     $('.content_sirocco .raid_player:nth-child(4)').css('display', 'table');
-                } else if($(this).attr('class') == 'raid_5'){
+                } else if ($(this).attr('class') == 'raid_5') {
                     $('.content_sirocco .raid_player:nth-child(5)').css('display', 'table');
                 }
             });
@@ -89,6 +90,7 @@
 
         // 메인 메뉴 열기
         var main_on = false;
+
         function mainMenuSelect() {
             if (!main_on) {
                 $('.main_menu').css('display', 'block');
@@ -101,7 +103,8 @@
 
         // 외부 링크 메뉴 열기
         var ex_on = false;
-        function sideMenuSelect(){
+
+        function sideMenuSelect() {
             if (!ex_on) {
                 $('.ex_menu').css('display', 'block');
                 ex_on = true;
@@ -139,7 +142,7 @@
                                             <li><a href="/story/astera/" class="link_sub">길드소개</a></li>
                                             <li><a href="/story/rule/" class="link_sub">길드규칙</a></li>
                                             <li><a href="/story/career/" class="link_sub">가입방법</a></li>
-                                        </ul> 
+                                        </ul>
                                     </li>
                                     <li>
                                         <a href="#" class="link_gnb">
@@ -149,7 +152,7 @@
                                         <ul class="list_sub">
                                             <li><a href="/content/chat/" class="link_sub">오픈채팅</a></li>
                                             <li><a href="/content/sirocco/" class="link_sub">길드공대 (시로코)</a></li>
-                                        </ul> 
+                                        </ul>
                                     </li>
                                     <li>
                                         <a href="#" class="link_gnb">
@@ -158,7 +161,7 @@
                                         </a>
                                         <ul class="list_sub">
                                             <li><a href="/product/app/" class="link_sub">모바일 앱</a></li>
-                                        </ul> 
+                                        </ul>
                                     </li>
                                     <li>
                                         <a href="#" class="link_gnb">
@@ -167,7 +170,7 @@
                                         </a>
                                         <ul class="list_sub">
                                             <li><a href="/cs/support/" class="link_sub">문의하기</a></li>
-                                        </ul> 
+                                        </ul>
                                     </li>
                                     <li>
                                         <a href="#" class="link_gnb">
@@ -176,7 +179,7 @@
                                         </a>
                                         <ul class="list_sub">
                                             <li><a href="/manage/sponsor/" class="link_sub">후원하기</a></li>
-                                        </ul> 
+                                        </ul>
                                     </li>
                                 </ul>
                             </nav>
@@ -198,14 +201,16 @@
                             <nav id="sideEx">
                                 <ul class="list_ex">
                                     <li>
-                                        <a href="https://www.facebook.com/%EB%8D%98%EC%A0%84%EC%95%A4%ED%8C%8C%EC%9D%B4%ED%84%B0-%EC%95%84%EC%8A%A4%ED%85%8C%EB%9D%BC-%EA%B8%B8%EB%93%9C-106279844541402" target="_blank" class="link_ex">
+                                        <a href="https://www.facebook.com/%EB%8D%98%EC%A0%84%EC%95%A4%ED%8C%8C%EC%9D%B4%ED%84%B0-%EC%95%84%EC%8A%A4%ED%85%8C%EB%9D%BC-%EA%B8%B8%EB%93%9C-106279844541402"
+                                            target="_blank" class="link_ex">
                                             <img src="images/ex_facebook.png"></img>
                                             페이스북 (Facebook)
                                             <span class="ico_arrow ico_arrow_move"></span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.youtube.com/channel/UCXNW8z3YPXJBsvU3JjqMQEQ?view_as=subscriber" target="_blank" class="link_ex">
+                                        <a href="https://www.youtube.com/channel/UCXNW8z3YPXJBsvU3JjqMQEQ?view_as=subscriber"
+                                            target="_blank" class="link_ex">
                                             <img src="images/ex_youtube.png"></img>
                                             유튜브 (Youtube)
                                             <span class="ico_arrow ico_arrow_move"></span>
@@ -278,54 +283,57 @@
                 <!-- PC 버전 외부 링크 메뉴 -->
                 <nav class="ex_gnb">
                     <ul class="ex_gnb_wrapper">
-                        <li><a href="https://www.facebook.com/%EB%8D%98%EC%A0%84%EC%95%A4%ED%8C%8C%EC%9D%B4%ED%84%B0-%EC%95%84%EC%8A%A4%ED%85%8C%EB%9D%BC-%EA%B8%B8%EB%93%9C-106279844541402"  target="_blank" class="ex_gnb_link"><img src="images/gnb_facebook.png"></a></li>
-                        <li><a href="https://www.youtube.com/channel/UCXNW8z3YPXJBsvU3JjqMQEQ?view_as=subscriber" target="_blank" class="ex_gnb_link"><img src="images/gnb_youtube.png"></a></li>
-                        <li><a href="https://www.instagram.com/" target="_blank" class="ex_gnb_link"><img src="images/gnb_insta.png"></a></li>
+                        <li><a href="https://www.facebook.com/%EB%8D%98%EC%A0%84%EC%95%A4%ED%8C%8C%EC%9D%B4%ED%84%B0-%EC%95%84%EC%8A%A4%ED%85%8C%EB%9D%BC-%EA%B8%B8%EB%93%9C-106279844541402"
+                                target="_blank" class="ex_gnb_link"><img src="images/gnb_facebook.png"></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCXNW8z3YPXJBsvU3JjqMQEQ?view_as=subscriber"
+                                target="_blank" class="ex_gnb_link"><img src="images/gnb_youtube.png"></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank" class="ex_gnb_link"><img
+                                    src="images/gnb_insta.png"></a></li>
                     </ul>
                 </nav>
             </div>
         </header>
         <section id="asteraTopSection">
             <% if(data == 'index'){ %>
-                <%- include("part/index_top.ejs") %>
+            <%- include("part/index_top.ejs") %>
             <% } else if(data == 'astera'){ %>
-                <%- include("part/intro_top.ejs") %>
+            <%- include("part/intro_top.ejs") %>
             <% } else if(data == 'rule'){ %>
-                <%- include("part/rule_top.ejs") %>
+            <%- include("part/rule_top.ejs") %>
             <% } else if(data == 'career'){ %>
-                <%- include("part/career_top.ejs") %>
+            <%- include("part/career_top.ejs") %>
             <% } else if(data == 'chat'){ %>
-                <%- include("part/chat_top.ejs") %>
+            <%- include("part/chat_top.ejs") %>
             <% } else if(data == 'sirocco'){ %>
-                <%- include("part/sirocco_top.ejs") %>
+            <%- include("part/sirocco_top.ejs") %>
             <% } else if(data == 'app'){ %>
-                <%- include("part/app_top.ejs") %>
+            <%- include("part/app_top.ejs") %>
             <% } else if(data == 'support'){ %>
-                <%- include("part/support_top.ejs") %>
+            <%- include("part/support_top.ejs") %>
             <% }  else if(data == 'sponsor'){ %>
-                <%- include("part/sponsor_top.ejs") %>
+            <%- include("part/sponsor_top.ejs") %>
             <% } %>
         </section>
         <section id="asteraMainSection">
             <div class="a_section">
                 <% if(data == 'index'){ %>
-                    <%- include("part/index_main.ejs") %>
+                <%- include("part/index_main.ejs") %>
                 <% } else if(data == 'astera'){ %>
-                    <%- include("part/intro_main.ejs") %>
+                <%- include("part/intro_main.ejs") %>
                 <% } else if(data == 'rule'){ %>
-                    <%- include("part/rule_main.ejs") %>
+                <%- include("part/rule_main.ejs") %>
                 <% } else if(data == 'career'){ %>
-                    <%- include("part/career_main.ejs") %>
+                <%- include("part/career_main.ejs") %>
                 <% } else if(data == 'chat'){ %>
-                    <%- include("part/chat_main.ejs") %>
+                <%- include("part/chat_main.ejs") %>
                 <% } else if(data == 'sirocco'){ %>
-                    <%- include("part/sirocco_main.ejs") %>
+                <%- include("part/sirocco_main.ejs") %>
                 <% } else if(data == 'app'){ %>
-                    <%- include("part/app_main.ejs") %>
+                <%- include("part/app_main.ejs") %>
                 <% } else if(data == 'support'){ %>
-                    <%- include("part/support_main.ejs") %>
+                <%- include("part/support_main.ejs") %>
                 <% }  else if(data == 'sponsor'){ %>
-                    <%- include("part/sponsor_main.ejs") %>
+                <%- include("part/sponsor_main.ejs") %>
                 <% } %>
             </div>
         </section>

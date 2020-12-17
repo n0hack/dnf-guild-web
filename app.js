@@ -3,7 +3,6 @@ var express = require('express'),
     fs = require('fs');
 
 var app = express();
-var port = process.env.PORT || 8080;
 
 // view 미들웨어 연결
 app.set('views', 'views');
@@ -32,6 +31,6 @@ app.use('/manage/sponsor', express.static(__dirname + '/public'));
 app.use('/', express.static(__dirname + '/public'));
 
 // 서버 연결
-app.listen(port, function(){
+app.listen(52273, function(){
     console.log('Server Running at http://astera.co.kr/');
 });

@@ -13,6 +13,7 @@ app.get('/story/astera', function(req, res){  res.render('layout.ejs', { data: '
 app.get('/story/rule', function(req, res){ res.render('layout.ejs', { data: 'rule' }); });
 app.get('/story/career', function(req, res){ res.render('layout.ejs', { data: 'career' }); });
 app.get('/content/chat', function(req, res){ res.render('layout.ejs', { data: 'chat' }); });
+app.get('/content/ozma', function(req, res){ res.render('layout.ejs', { data: 'ozma' }); });
 app.get('/content/sirocco', function(req, res){ res.render('layout.ejs', { data: 'sirocco' }); });
 app.get('/product/app', function(req, res){ res.render('layout.ejs', { data: 'app' }); });
 app.get('/cs/support', function(req, res){ res.render('layout.ejs', { data: 'support' }); });
@@ -24,6 +25,7 @@ app.use('/story/astera', express.static(__dirname + '/public'));
 app.use('/story/rule', express.static(__dirname + '/public'));
 app.use('/story/career', express.static(__dirname + '/public'));
 app.use('/content/chat', express.static(__dirname + '/public'));
+app.use('/content/ozma', express.static(__dirname + '/public'));
 app.use('/content/sirocco', express.static(__dirname + '/public'));
 app.use('/product/app', express.static(__dirname + '/public'));
 app.use('/cs/support', express.static(__dirname + '/public'));

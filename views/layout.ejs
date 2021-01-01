@@ -152,6 +152,7 @@
                                         </a>
                                         <ul class="list_sub">
                                             <li><a href="/content/chat/" class="link_sub">오픈채팅</a></li>
+                                            <li><a href="/content/ozma/" class="link_sub">길드공대 (오즈마)</a></li>
                                             <li><a href="/content/sirocco/" class="link_sub">길드공대 (시로코)</a></li>
                                         </ul>
                                     </li>
@@ -252,6 +253,7 @@
                                     <p>CONTENT</p>
                                     <ul>
                                         <li><a href="/content/chat/" class="nav_link">오픈채팅</a></li>
+                                        <li><a href="/content/ozma/" class="nav_link">길드공대 (오즈마)</a></li>
                                         <li><a href="/content/sirocco/" class="nav_link">길드공대 (시로코)</a></li>
                                     </ul>
                                 </div>
@@ -305,6 +307,8 @@
             <%- include("part/career_top.ejs") %>
             <% } else if(data == 'chat'){ %>
             <%- include("part/chat_top.ejs") %>
+            <% } else if(data == 'ozma'){ %>
+            <%- include("part/ozma_top.ejs") %>
             <% } else if(data == 'sirocco'){ %>
             <%- include("part/sirocco_top.ejs") %>
             <% } else if(data == 'app'){ %>
@@ -327,6 +331,8 @@
                 <%- include("part/career_main.ejs") %>
                 <% } else if(data == 'chat'){ %>
                 <%- include("part/chat_main.ejs") %>
+                <% } else if(data == 'ozma'){ %>
+                <%- include("part/ozma_main.ejs") %>
                 <% } else if(data == 'sirocco'){ %>
                 <%- include("part/sirocco_main.ejs") %>
                 <% } else if(data == 'app'){ %>

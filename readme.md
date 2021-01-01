@@ -12,7 +12,7 @@ I developed this with no prior html/css/js knowledge and started working on this
 
 ### Preview
 
-![](https://i.gyazo.com/4a20d1ae3e616e6e133115e15a650552.png)
+[![](https://i.gyazo.com/1b27880df2db19e83dacfc2e59848531.jpg)](https://gyazo.com/1b27880df2db19e83dacfc2e59848531)
 
 ## Built With
 
